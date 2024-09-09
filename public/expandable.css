@@ -1,0 +1,59 @@
+/* Container for the expandable section */
+/* In your ExpandableSection.css file */
+
+.expandable-section {
+  position: relative;
+  width: 100%;
+  height: 20px; /* Default height when not expanded */
+  background-color: #ecf0f1; /* Light background for contrast */
+  transition: height 0.3s ease; /* Smooth transition for height change */
+  overflow: hidden; /* Hide overflow content */
+  border: 1px solid #ddd; /* Optional: border for visual separation */
+  display: flex;
+  align-items: center;
+}
+
+/* Content inside the expandable section */
+.expandable-content {
+  display: flex;
+  justify-content: space-between; /* Align text and image to opposite sides */
+  align-items: center;
+  height: 100%;
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Image styling */
+.car-image {
+  width: 200px; /* Adjusted width */
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+  margin-left: 20px; /* Space between text and image */
+}
+
+/* Text styling */
+.car-text {
+  font-family: "Playfair Display", serif; /* Example decorative font */
+  font-size: 24px; /* Increased font size */
+  color: #34495e; /* Darker color for better readability */
+  text-align: left; /* Align text to the left */
+  max-width: 60%; /* Adjust text width to fit */
+  line-height: 1.5; /* Increase line height for readability */
+  font-weight: 400; /* Adjust font weight for visual appeal */
+  margin: 0;
+}
+
+/* Expandable section hover effect */
+.expandable-section:hover {
+  height: 300px; /* Height when expanded */
+}
+
+.expandable-section:hover .expandable-content {
+  opacity: 1; /* Show content on hover */
+}
+
+.expandable-section:hover .car-image {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}

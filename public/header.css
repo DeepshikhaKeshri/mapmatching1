@@ -1,0 +1,113 @@
+/* Sticky header with improved layout and background */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #34495e; /* Darker shade for modern look, matching footer */
+  color: #ecf0f1; /* Light text color for contrast, same as footer */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 80px; /* Fixed height */
+  border-bottom: 2px solid #2c3e50; /* Line below the header */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Logo styling with slight hover effect */
+.logo img {
+  height: 55px;
+  transition: transform 0.2s ease; /* Smooth scaling effect */
+}
+
+.logo img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Navigation menu with enhanced spacing */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  color: #ecf0f1; /* Light text color for contrast, same as footer */
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #2c3e50; /* Slightly darker shade on hover */
+  color: #3498db; /* Accent color for hover */
+  border-radius: 8px; /* Subtle rounding effect on hover */
+}
+
+/* Call-to-action button styling with improved colors and hover */
+.cta-button {
+  background-color: #3498db; /* Primary button color */
+  color: #ecf0f1; /* Light text color */
+  border: none;
+  padding: 12px 25px;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Added subtle shadow */
+}
+
+.cta-button:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px; /* Increased top and bottom padding */
+    height: auto; /* Allow height to adjust for smaller screens */
+  }
+
+  .logo {
+    margin-bottom: 15px; /* Space between logo and nav menu */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .nav-menu a {
+    width: 100%;
+    text-align: center; /* Center align text for better look */
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+/* Media query for extra-large screens */
+@media (min-width: 1200px) {
+  .header {
+    padding: 20px 60px; /* More padding for larger screens */
+  }
+
+  .nav-menu a {
+    font-size: 18px; /* Larger font size for better readability */
+  }
+
+  .cta-button {
+    font-size: 18px; /* Larger font size for better readability */
+  }
+}

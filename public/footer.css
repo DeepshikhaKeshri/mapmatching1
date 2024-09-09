@@ -1,0 +1,45 @@
+.footer {
+  background-color: #2c3e50; /* Darker shade for modern look */
+  color: #ecf0f1; /* Light text color for contrast */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3498db; /* Accent color on hover */
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
